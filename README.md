@@ -4,6 +4,13 @@
 
 The AI Code Analyzer is a sophisticated tool designed to assist developers in analyzing code for performance efficiency and security vulnerabilities. By leveraging advanced AI models, the tool provides insights on time and space complexity, as well as identifying potential security risks in the provided code.
 
+<div align='center'>
+   <br>
+     <img src="https://github.com/user-attachments/assets/b4d377fe-4141-4851-86ac-a6f7a5846a52" alt="Image" width='800'>
+     <img src="https://github.com/user-attachments/assets/fb0982bb-3043-4a3e-b69b-d0a1c930e18c" alt="Image" width='800'>
+   <br>
+</div>
+
 ## Features
 
 - **AI-Powered Code Explanation**: AI simplifies complex code into easy terms.
