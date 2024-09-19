@@ -8,8 +8,8 @@ export const features = [
         description: "Automatically generate comprehensive unit tests to validate your code.",
     },
     {
-        title: "Code Style Enforcement",
-        description: "Maintain uniform code style across your project by applying predefined style guidelines.",
+        title: "Complexity Analysis",
+        description: "Analyze the time and space complexity of your code to identify areas for optimization.",
     },
     {
         title: "Performance Optimization",

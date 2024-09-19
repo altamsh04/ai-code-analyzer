@@ -1,9 +1,20 @@
-import { Button } from "@/components/ui/button";
+// SendButton.jsx
+import { Loader2 } from 'lucide-react'; // Import Loader2 from Lucide React
 
-export default function SendButton({ onSubmit }) {
+const SendButton = ({ onSubmit, loading }) => {
   return (
-    <Button className="ml-4 my-2" onClick={onSubmit}>
-      Send code
-    </Button>
+    <button
+      onClick={onSubmit}
+      className="p-2 bg-black-500 text-white rounded-lg flex items-center justify-center"
+      disabled={loading}
+    >
+      {loading ? (
+        <Loader2 className="animate-spin" size={24} /> // Display loader when loading
+      ) : (
+        'Send Code'
+      )}
+    </button>
   );
-}
+};
+
+export default SendButton;

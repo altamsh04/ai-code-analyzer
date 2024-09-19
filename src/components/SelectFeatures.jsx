@@ -1,15 +1,15 @@
 import { Button } from "@/components/ui/button";
 import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
 import { features } from "@/data/features";
-import { Loader2, LucideMenu, LucideTrash, UploadIcon } from "lucide-react";
+import { Loader2, LucideTrash, UploadIcon } from "lucide-react";
 import { useRef, useState } from "react";
 
 export default function SelectFeatures({ onClear, onFileUpload, onFeatureSelect }) {
@@ -20,15 +20,15 @@ export default function SelectFeatures({ onClear, onFileUpload, onFeatureSelect 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
-      setIsLoading(true); // Show loader when a file is selected
+      setIsLoading(true);
       const reader = new FileReader();
       reader.onload = (e) => {
         const content = e.target.result;
         setTimeout(() => {
-          setIsLoading(false); // Hide loader after 3 seconds
-          onFileUpload(content); // Process the file content
-          fileInputRef.current.value = null; // Reset the file input
-        }, 3000); // 3 seconds delay
+          setIsLoading(false);
+          onFileUpload(content);
+          fileInputRef.current.value = null;
+        }, 1000);
       };
       reader.readAsText(file);
     }
@@ -66,16 +66,12 @@ export default function SelectFeatures({ onClear, onFileUpload, onFeatureSelect 
           className="hidden"
         />
 
-        {/* Show loading spinner or upload button based on isLoading */}
         <Button variant="outline" onClick={() => fileInputRef.current.click()} disabled={isLoading}>
           {isLoading ? <Loader2 className="animate-spin h-4 w-4" /> : <UploadIcon className="h-4 w-4" />}
         </Button>
 
         <Button variant="outline" onClick={onClear}>
           <LucideTrash className="h-4 w-4" />
-        </Button>
-        <Button variant="outline">
-          <LucideMenu className="h-4 w-4" />
         </Button>
       </div>
     </div>
