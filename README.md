@@ -6,9 +6,14 @@ The AI Code Analyzer is a sophisticated tool designed to assist developers in an
 
 ## Features
 
-- **Complexity Analysis**: Evaluate the time and space complexity of algorithms, with clear output in JSON format.
-- **Security Vulnerability Detection**: Identify potential security risks in code and receive recommendations for improvements.
-- **User-Friendly Interface**: An intuitive interface for users to input code and receive instant feedback.
+- **AI-Powered Code Explanation**: AI simplifies complex code into easy terms.
+- **Unit Test Suggestions**: Automatically generate comprehensive unit tests to validate your code.
+- **Complexity Analysis**: Analyze the time and space complexity of your code to identify areas for optimization.
+- **Performance Optimization**: Identify and fix performance bottlenecks.
+- **Code Documentation Generation**: Auto-generate comments and documentation.
+- **Security Vulnerability Detection**: Detect potential security risks.
+- **Syntax Checking and Error Detection**: Spot and fix syntax errors.
+- **Code Quality and Best Practices**: Improve code quality with best practices.
 - **Markdown Support**: Output formatted responses using Markdown for improved readability.
 - **File Upload**: Support for uploading code files for analysis.
 - **Responsive Design**: A modern and responsive layout ensuring usability across various devices.
