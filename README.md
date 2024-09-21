@@ -40,7 +40,12 @@ To run the project locally, follow these steps:
    git clone https://github.com/altamsh04/ai-code-analyzer.git
    cd ai-code-analyzer
    ```
-
+   
+2. Create .env in project folder and add your google gemini api key:
+   ```bash
+   VITE_GOOGLE_API_KEY = ADD_YOUR_API_KEY_HERE
+   ```
+   
 2. Install dependencies:
    ```bash
    npm install
